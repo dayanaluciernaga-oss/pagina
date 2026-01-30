@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"  href="estilos.css">
+</head>
+<body>
+ <link rel="stylesheet" href="style.css">
+  <div class="search-container">
+    <input type="text" placeholder="Buscar contenido..." class="search-input">
+    <button type="submit" class="search-btn">
+        Buscar
+    </button>
+</div>
+</body>
+  <html>
+
+  <title>KLICKLOSER SRIFT</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* --- ESTILO GENERAL --- */
+
+    :root {
+
+      --fondo: #222831;
+
+      --panel: #393e46;
+
+      --texto: #eeeeee;
+
+      --enlace: #00adb5;
+
+      --resalte: #8ab4f8;
+
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+
+      margin: 0;
+
+      font-family: 'Open Sans', sans-serif;
+
+      background-color: var(--fondo);
+
+      color: var(--texto);
+
+      line-height: 1.6;
+
+    }
+
+    h1, h2 {
+
+      font-family: 'Montserrat', sans-serif;
+
+      letter-spacing: 1px;
+
+    }
+
+    /* --- CABECERA Y MENÚ --- */
+
+    header {
+
+      background: linear-gradient(90deg, #111, #222);
+
+      padding: 1em 0;
+
+      text-align: center;
+
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+    header img {
+
+      width: 100px;
+
+      border-radius: 50%;
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    }
+
+    header h1 {
+
+      margin: 0.5em 0 0;
+
+      font-size: 2em;
+
+      color: var(--resalte);
+
+    }
+
+    nav ul {
+
+      padding: 0;
+
+      margin-top: 0.5em;
+
+      list-style: none;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 1.5em;
+
+      flex-wrap: wrap;
+
+    }
+
+    nav a {
+
+      color: var(--enlace);
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+      position: relative;
+
+      transition: color 0.3s ease;
+
+    }
+
+    nav a::after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 0%;
+
+      height: 2px;
+
+      left: 0;
+
+      bottom: -3px;
+
+      background-color: var(--enlace);
+
+      transition: width 0.3s ease;
+
+    }
+
+    nav a:hover {
+
+      color: var(--resalte);
+
+    }
+
+    nav a:hover::after {
+
+      width: 100%;
+
+    }
+
+    /* --- CONTENIDO PRINCIPAL --- */
+
+    main {
+
+      padding: 40px 20px;
+
+      max-width: 1000px;
+
+      margin: 0 auto;
+
+    }
+
+    section {
+
+      background-color: var(--panel);
+
+      padding: 20px;
+
+      border-radius: 10px;
+
+      margin-bottom: 30px;
+
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+      transition: transform 0.2s ease;
+
+    }
+
+    section:hover {
+
+      transform: scale(1.01);
+
+    }
+
+    h2 {
+
+      border-left: 5px solid var(--enlace);
+
+      padding-left: 10px;
+
+      color: var(--resalte);
+
+    }
+
+    p {
+
+      text-align: justify;
+
+    }
+
+    img {
+
+      max-width: 100%;
+
+      border-radius: 10px;
+
+      display: block;
+
+      margin: 20px auto;
+
+    }
+
+    /* --- PIE DE PÁGINA --- */
+
+    footer {
+
+      text-align: center;
+
+      background: #111;
+
+      padding: 1.5em 0;
+
+      color: #ccc;
+
+      font-size: 0.9em;
+
+      margin-top: 20px;
+
+      border-top: 1px solid rgba(255,255,255,0.1);
+
+    }
+
+    footer a {
+
+      color: var(--enlace);
+
+      text-decoration: none;
+
+    }
+
+    footer a:hover {
+
+      text-decoration: underline;
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <img src="https://scontent.ftij2-1.fna.fbcdn.net/v/t1.15752-9/618471452_1215180223474204_1532414132912190319_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHH2_aIqj-j3fojTXw9ZatLqGYSYp2H4PuoZhJinYfg--hYqgikf0BdDPALpMax4CwP1G--GjhZV1ngGO1g89c2&_nc_ohc=wFLRaklXBvIQ7kNvwFj3AEb&_nc_oc=Adn2J2YkxnCPL9a91MxSVuAAGk21ppx5wb-7VPap1ktc0A9wyqA85TVQbwEmAf4baQxXjHaA2GSY5uVkPmnwRgmY&_nc_zt=23&_nc_ht=scontent.ftij2-1.fna&oh=03_Q7cD4QERRdPK1Ps0cdTIcwGL5qu0k5ya4NIsv9CNlNjdtDjAvA&oe=699F9A2A">
+
+    <h1>KLICKLOSER SRIFT</h1>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="index.html">Inicio</a></li>
+
+         <li><a href="casos famosos.html">Casos Famosos</a></li>
+
+        <li><a href="psicologia.html">Psicología</a></li>
+        <li><a href="juicio y final.html">juicio y final</a></li>
+
+ 
+
+  </ul>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="inicio">
+
+      <h2>El Enigma de los Asesinos Seriales</h2>
+
+      <p>Los asesinos seriales han fascinado y aterrorizado a la sociedad durante décadas. Son individuos que cometen múltiples homicidios, generalmente con un patrón específico, motivados por impulsos psicológicos profundos y complejos. A diferencia de los crímenes pasionales o accidentales, sus actos suelen ser premeditados y ejecutados con precisión escalofriante.</p>
+
+      <p>Pero sin duda el asesino más famoso de todos los tiempos sería Jack el Destripador.</p>
+
+      <img src="https://okdiario.com/img/2017/05/15/jack-el-destripador-1-e1494888420500.jpg" alt=""https://okdiario.com/img/2017/05/15/jack-el-destripador-1-e1494888420500.jpg>
+
+    </section>
+
+    <section id="asesinatos">
+
+      <h2>Londres 1888 – Barrio de Whitechapel</h2>
+
+      <p>En ese tiempo, Londres contaba con aproximadamente cinco millones de habitantes y tan solo siete mil policías. La fuerza era escasa, débil y no disponía de los recursos necesarios para combatir la creciente ola de crímenes.</p>
+
+      <p>El primer crimen atribuido a Jack el Destripador fue el de Mary Ann Nichols, una mujer de 43 años, prostituta y alcohólica. Vivía en distintas casas a cambio de favores sexuales. La noche del 30 de agosto fue rechazada por no pagar su alojamiento. Salió a las calles para conseguir dinero, y a la mañana siguiente su cuerpo fue encontrado. Tenía dos profundos cortes en el cuello, uno de ellos llegando hasta la columna vertebral, y el abdomen completamente abierto. El forense concluyó que el asesino poseía conocimientos anatómicos por la precisión de los cortes.</p>
+
+      <p>Los testigos afirmaron que el cuerpo aún estaba tibio, pero muchos evitaron involucrarse por miedo a problemas. La policía, con pocos recursos, solo aumentó las rondas nocturnas y buscó sospechosos entre carniceros y médicos locales.
+
+<p>segundo asesinato:Annie Chapman prostituta ocacional de 47 años,era igual que mary pagaba con cuerpo comida o alojamiento,la ultima vez vista fue tomando el 7 de septiembre en un bar,ala 1:30 de la mañana fue corrida de si alojamiento por que no tenia el pago los 4 peliques a un jon como les decian todas las prostitutas a sus clientes,salio a buscar un cliente para poder obtener dinero,su cuerpo fue descubierto alas 6 de la mañana el 8 de septiembre 1888  fue encontrada muerta en el patio trasero de una casa en Hanbury Street.se notaba que fue asesinada,jon un inquilino bajo al patio a esa hora ,el encontró el cuerpo de annie boca arriba con las piernas abiertas complatamente mutilada en ese momento fue a buscar ayuda llega un medico forense,hizo optopcia encontraron 2 cortes profundos en la gasganta,el abdomen abierto,aparte en esta ocasión le había arrancado el útero del cuerpo,tambien saco intestinos y los coloco en el hombro izquierdo,dice que fue rápido y preciso,se notaba que sabia de todo ese tipo de cortes
+se dice que fue vista por ultima vez ala 5:30 de la mañana y su cuerpo fue visto alas 6,lo que indica que el asesinato fue entre 30 minutos o menos.
+la policía interrogo a todos los habitantes de la casa que eran 15 persnas y de nuevo a todos los carniceros y médicos.aqui empieza a distribuir folletos donde se ponía advertencias ,este folleto era para las sexyservidoras,cuidado hay alguien que mata prostitutas.
+no se sabia nada de asesino serial,solo que gente mataba prostituta no pensaban que era una sola persona si no que eran una banda o pandilla,con el tiempo esa teoría fue rechazada.
+hubo varias fallas ,ya que la ecena del crimen fue muy contaminada,le robaron al cuerpo.los sopechosos mas cercanos:un señor que se encargaba de curtir pieles,tambien mencionaron uqe los hbian visto juntos,tambien un vendedor ambulante,fue detenido por comportamiento sospechoso.
+este caso fue importante,por que fue el primer caso donde se vio que el easesino estaba quitando los órganos de la vistimas asesino que le quito los órganos y los medico recarcaban que el asesino tenia entrenamiento medico y tambian al repartir los folletos y la zona conocida ,todos empezaron a dar cuenta que había un asesino,se hizo famoso en todo Londres que extraía los órganos,esto hizo que el jefe de policía hiciera publico que si tuvieran culaquieron pista lo reportaran ala policía,esto fue lo peor que pud pasar,ya que mucha jente empezó a hacerse pasar por el asesino y mandaba cartas al jefe de policía,pero entre muchas cartas hubo una que se llamaba querido jefe,la primera carta oficial de Jack el destripador.la carta estaba escrita a mano en tinta roja,en la época la tinta roja era muy cara,lo que contenia la carta era lo siguente.
+                           querido jefe me mantengo escuchando que la policía ya me tiene ,pero hasta hora no me an atrapado me he reido cuando parence tan listos y dicen que están tras la pisa correcta ese chiste sobre el delantal de cuero me hizo partir de risa,estoy tras las prostitutos y  no parare de destriparlas hhasta que me atrapen la ultima fue un trabajo bonito no le di tiempo siquiera de chillar mi cuchillo es tan bonito y afilado que quiero ponerme a trabajar justo ahora si tengo la oportunidad quiero trabajar otra vez y pronto escucharan de mi con mis pequeños juegos divertidos ,he guardado un poco de sangre en un otella de cerveza para escribir para escribir pero se espeso como pegamento y o la pude usar tinta roja servirá supngo jjajajaja,en mi siguiente trabajo cortare las oregas de la dama y se las mandare als policía solo por divercion,atrevasen a atraparme si pueden,sinceramente suyo Jack el destripador.
+
+Jack ha sido de los pocos y el primero que me auto nombro,la policía antes de la carta había estado hablando que tenían todo bajo control.</p>
+
+<img src="https://media.minutouno.com/p/b87c6dd4ab68d9ed4f675b2715a16057/adjuntos/150/imagenes/027/332/0027332091/730x0/smart/carta-jack-el-destripador-wikipedia.png" alt="https://media.minutouno.com/p/b87c6dd4ab68d9ed4f675b2715a16057/adjuntos/150/imagenes/027/332/0027332091/730x0/smart/carta-jack-el-destripador-wikipedia.png">
+
+
+    </section>
+
+    <section id="listas">
+
+      <h2>Lista de Sospechosos de Jack el Destripador</h2>
+
+      <p>Aquí hay una lista de algunos de los sospechosos más comunes en el caso de Jack el Destripador:</p>
+
+      <ul>
+
+        <li>Aaron Kosminski</li>
+
+        <li>Walter Sickert</li>
+
+        <li>Montague John Druitt</li>
+
+        <li>Michael Ostrog</li>
+
+      </ul>
+
+      <h2>Cronología de los Asesinatos</h2>
+
+      <ol>
+
+        <li>Mary Ann Nichols (31 de agosto de 1888)</li>
+
+        <li>Annie Chapman (8 de septiembre de 1888)</li>
+
+        <li>Elizabeth Stride (30 de septiembre de 1888)</li>
+
+        <li>Catherine Eddowes (30 de septiembre de 1888)</li>
+
+        <li>Mary Jane Kelly (9 de noviembre de 1888)</li>
+
+      </ol>
+
+    </section>
+
+    <section id="tablas">
+  <h2>Tabla de Víctimas de Jack el Destripador</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <caption>Listado de víctimas en Whitechapel, 1888</caption>
+    <thead style="background-color:#000;">
+      <tr>
+        <th>Nombre</th>
+        <th>Fecha del Asesinato</th>
+        <th>Edad</th>
+        <th>Ubicación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mary Ann Nichols</td>
+        <td>31 de agosto de 1888</td>
+        <td>43</td>
+        <td>Whitechapel</td>
+      </tr>
+      <tr>
+        <td>Annie Chapman</td>
+        <td>8 de septiembre de 1888</td>
+        <td>47</td>
+        <td>Whitechapel</td>
+      </tr>
+      <tr>
+        <td>Elizabeth Stride</td>
+        <td>30 de septiembre de 1888</td>
+        <td>44</td>
+        <td>Whitechapel</td>
+      </tr>
+      <tr>
+        <td>Catherine Eddowes</td>
+        <td>30 de septiembre de 1888</td>
+        <td>46</td>
+        <td>Whitechapel</td>
+      </tr>
+      <tr>
+        <td>Mary Jane Kelly</td>
+        <td>9 de noviembre de 1888</td>
+        <td>25</td>
+        <td>Whitechapel</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+
+  <footer>
+
+    <p>© 2025 KLICKLOSER SRIFT | Inspirado en los misterios de Whitechapel</p>
+
+    <p><a href="#inicio">Volver arriba</a></p>
+
+  </footer>
+
+</body>
+
+</html>
